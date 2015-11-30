@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.diversedistractions.vehiclelog.com.diversedistractions.vehiclelog.VehicleDetailActivity">
+
+    <ImageView
+        android:id="@+id/imageViewVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/veh_image_content_description"
+        android:src="@drawable/vi_car"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/year_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:layout_below="@+id/imageViewVehicle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="88dp"
+        android:minHeight="32dp" />
+    <TextView
+        android:id="@+id/year_display"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/year_label"
+        android:layout_alignBottom="@+id/year_label"
+        android:layout_marginLeft="16dip"
+        android:minHeight="32dp" />
+
+
+    <TextView
+        android:id="@+id/make_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/year_display"
+        android:text="@string/make"
+        android:minHeight="32dp"
+        android:layout_alignRight="@+id/year_label" />
+    <TextView
+        android:id="@+id/make"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/make_label"
+        android:layout_marginLeft="16dip"
+        android:layout_alignBottom="@+id/make_label"
+        android:minHeight="32dp" />
+
+
+    <TextView
+        android:id="@+id/model_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/make"
+        android:text="@string/model"
+        android:minHeight="32dp"
+        android:layout_alignRight="@+id/year_label" />
+    <TextView
+        android:id="@+id/model"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/model_label"
+        android:layout_alignBottom="@+id/model_label"
+        android:layout_marginLeft="16dip"
+        android:minHeight="32dp" />
+
+
+    <TextView
+        android:id="@+id/vin_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/model"
+        android:text="@string/vin"
+        android:minHeight="32dp"
+        android:layout_alignRight="@+id/year_label" />
+    <TextView
+        android:id="@+id/vin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vin_label"
+        android:layout_marginLeft="16dip"
+        android:layout_alignBottom="@+id/vin_label"
+        android:minHeight="32dp" />
+
+
+    <TextView
+        android:id="@+id/plate_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vin"
+        android:text="@string/plate"
+        android:minHeight="32dp"
+        android:layout_alignRight="@+id/year_label" />
+    <TextView
+        android:id="@+id/plate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/plate_label"
+        android:layout_marginLeft="16dip"
+        android:layout_alignBottom="@+id/plate_label"
+        android:minHeight="32dp" />
+
+
+    <TextView
+        android:id="@+id/ren_date_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plate"
+        android:text="@string/ren_date"
+        android:minHeight="32dp"
+        android:layout_alignRight="@+id/year_label" />
+    <TextView
+        android:id="@+id/ren_date_display"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ren_date_label"
+        android:layout_alignBottom="@+id/ren_date_label"
+        android:layout_marginLeft="16dip"
+        android:minHeight="32dp" />
+
+    <TextView
+        android:id="@+id/lifetime_mpg_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ren_date_label"
+        android:text="@string/lifetime_mpg"
+        android:minHeight="32dp"
+        android:layout_alignRight="@+id/year_label" />
+    <TextView
+        android:id="@+id/lifetime_mpg_display"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lifetime_mpg_label"
+        android:layout_marginLeft="16dip"
+        android:layout_alignBottom="@+id/lifetime_mpg_label"
+        android:minHeight="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleNoteLabel"
+        android:layout_below="@+id/lifetime_mpg_label"
+        android:layout_centerHorizontal="true"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/vehicleNote"
+        android:editable="false"
+        android:nestedScrollingEnabled="false"
+        android:maxLength="128"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vehicleNoteLabel"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:maxLines="4"
+        android:background="#40ffffff" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonFuel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dip"
+        android:layout_below="@+id/vehicleNote"
+        android:src="@drawable/ei_gas_pump"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/fuel_icon_content_description"
+        android:layout_marginLeft="32dip" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonService"
+        android:layout_centerHorizontal="true"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ei_wrench"
+        android:layout_alignTop="@+id/imageButtonFuel"
+        android:contentDescription="@string/service_icon_content_description" />
+
+</RelativeLayout>

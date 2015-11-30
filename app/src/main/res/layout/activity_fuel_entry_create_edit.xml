@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fuelEntryLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/vehicleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:text="@string/date"
+        android:layout_marginLeft="80dip"
+        android:layout_below="@+id/vehicleTitle" />
+    <Button
+        android:id="@+id/dateDisplay"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:minHeight="48dp"
+        android:layout_below="@+id/vehicleTitle"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/currentOdometerLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateDisplay"
+        android:layout_marginTop="12dip"
+        android:text="@string/odometer"
+        android:layout_alignRight="@+id/dateLabel" />
+    <EditText
+        android:id="@+id/currentOdometer"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateDisplay"
+        android:layout_toRightOf="@id/currentOdometerLabel"
+        android:hint="@string/odometer_hint"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp" />
+
+
+    <TextView
+        android:id="@+id/gallonsFilledLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentOdometer"
+        android:layout_marginTop="12dip"
+        android:text="@string/gallons"
+        android:layout_alignRight="@+id/dateLabel" />
+    <EditText
+        android:id="@+id/gallonsFilled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentOdometer"
+        android:layout_toRightOf="@id/gallonsFilledLabel"
+        android:hint="@string/gallons_hint"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/fuelCostLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gallonsFilled"
+        android:layout_marginTop="12dip"
+        android:text="@string/fuel_cost"
+        android:layout_alignRight="@+id/dateLabel" />
+    <EditText
+        android:id="@+id/fuelCost"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gallonsFilled"
+        android:layout_toRightOf="@id/fuelCostLabel"
+        android:hint="@string/fuel_cost_hint"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:id="@+id/partialTank"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fuelCost"
+        android:text="@string/partial_tank"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/enter"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/partialTank"
+        android:text="@string/confirm"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/vehicleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:text="@string/date"
+        android:layout_marginLeft="80dip"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/vehicleTitle" />
+    <Button
+        android:id="@+id/dateDisplay"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:minHeight="48dp"
+        android:layout_below="@+id/vehicleTitle"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/currentOdometerLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateDisplay"
+        android:layout_marginTop="12dip"
+        android:text="@string/odometer"
+        android:layout_alignRight="@+id/dateLabel" />
+    <EditText
+        android:id="@+id/currentOdometer"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateDisplay"
+        android:layout_toRightOf="@id/currentOdometerLabel"
+        android:hint="@string/odometer_hint"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/service_performed"
+        android:id="@+id/servicePerformedTitle"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/currentOdometer"
+        android:layout_marginTop="8dip" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oil"
+        android:id="@+id/oilCheckBox"
+        android:layout_below="@+id/servicePerformedTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@+id/dateLabel"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oil_filter"
+        android:id="@+id/oilFilterCheckBox"
+        android:layout_alignTop="@+id/oilCheckBox"
+        android:layout_centerHorizontal="true"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/air_filter"
+        android:id="@+id/airFilterCheckBox"
+        android:layout_alignTop="@+id/oilFilterCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cabin_air_filter"
+        android:id="@+id/cabinAirFilterCheckBox"
+        android:layout_below="@+id/oilCheckBox"
+        android:layout_alignLeft="@+id/oilCheckBox"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rotated_tires"
+        android:id="@+id/rotatedTiresCheckBox"
+        android:layout_below="@+id/airFilterCheckBox"
+        android:layout_alignRight="@+id/airFilterCheckBox"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/service_note_label"
+        android:id="@+id/vehicleNoteLabel"
+        android:layout_below="@+id/cabinAirFilterCheckBox"
+        android:layout_alignLeft="@+id/dateLabel" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textCapSentences|textAutoComplete|textAutoCorrect"
+        android:ems="10"
+        android:id="@+id/vehicleNoteText"
+        android:layout_below="@+id/vehicleNoteLabel"
+        android:editable="false"
+        android:hint="@string/service_note_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:maxLines="4"
+        android:nestedScrollingEnabled="true"
+        android:maxLength="128" />
+
+    <Button
+        android:id="@+id/enter"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:minHeight="48dp"
+        android:layout_below="@+id/vehicleNoteText"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

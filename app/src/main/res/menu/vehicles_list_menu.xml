@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_vehicle"
+        android:title="@string/menu_add_vehicle"
+        android:icon="@drawable/ic_add"
+        android:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/import_export"
+        android:title="@string/menu_import_export"
+        android:icon="@drawable/ic_alien_glow_import_export"
+        android:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit_entry"
+        android:icon="@drawable/ic_alien_glow_edit"
+        android:title="@string/menu_edit_fuel_entry"
+        android:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/delete_entry"
+        android:icon="@drawable/ic_alien_glow_discard"
+        android:title="@string/menu_delete_fuel_entry"
+        android:showAsAction="ifRoom|withText" />
+
+</menu>

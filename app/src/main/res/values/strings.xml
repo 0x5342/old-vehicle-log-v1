@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Vehicle Log</string>
+    <string name="no_vehicles">There are no vehicles in the database. Use the menu to enter a new
+        vehicle.</string>
+    <string name="menu_add_vehicle">Add a new vehicle</string>
+    <string name="menu_delete_vehicle">Delete Selected Vehicle</string>
+    <string name="menu_edit_vehicle">Edit Selected Vehicle</string>
+    <string name="new_fuel_entry">Enter fueling data</string>
+    <string name="confirm">save</string>
+    <string name="make">make:</string>
+    <string name="model">model:</string>
+    <string name="year">year:</string>
+    <string name="complete_vehicle_label">Year Make Model</string>
+    <string name="no_fuel_entries">There are no fuel entries for the selected vehicle. Use the menu
+        to enter a new fuel entry.</string>
+    <string name="no_service_entries">There are no service entries for the selected vehicle. Use the
+        menu to enter a new service entry.</string>
+    <string name="menu_add_fuel_entry">Add new fuel entry for selected vehicle</string>
+    <string name="menu_delete_fuel_entry">Delete the selected fuel entry</string>
+    <string name="menu_edit_fuel_entry">Edit the selected fuel entry</string>
+    <string name="menu_add_service_entry">Add new service entry for selected vehicle</string>
+    <string name="menu_delete_service_entry">Delete the selected service entry</string>
+    <string name="menu_edit_service_entry">Edit the selected service entry</string>
+    <string name="make_hint">Enter vehicle make here</string>
+    <string name="model_hint">Enter vehicle model here</string>
+    <string name="vin">vin:</string>
+    <string name="plate">plate:</string>
+    <string name="ren_date">renewal date:</string>
+    <string name="vin_hint">Enter the VIN here</string>
+    <string name="plate_hint">Enter license plate here</string>
+    <string name="date">date: </string>
+    <string name="odometer">odometer: </string>
+    <string name="gallons">gallons: </string>
+    <string name="fuel_cost">cost: $</string>
+    <string name="miles_short_name">mi.</string>
+    <string name="gallons_short_name">gal.</string>
+    <string name="partial_tank">partial tank (did not fill the tank)</string>
+    <string name="odometer_hint">Enter odometer here</string>
+    <string name="gallons_hint">Enter gallons filled here</string>
+    <string name="fuel_cost_hint">Enter cost of fuel here</string>
+    <string name="add_edit_vehicle_title">Add or Edit a Vehicle</string>
+    <string name="add_edit_entry_title">Add or Edit an Entry</string>
+    <string name="db_management_title">Vehicle Log Database Management</string>
+    <string name="menu_import_export">Import-Export</string>
+    <string name="lifetime_mpg">lifetime mpg: </string>
+    <string name="veh_image_content_description">Image of Vehicle</string>
+    <string name="title_edit_vehicle">Edit Vehicle</string>
+    <string name="title_view_vehicle">View Vehicle</string>
+    <string name="title_add_vehicle">Add New Vehicle</string>
+    <string name="fuel_icon_content_description">Fuel Icon</string>
+    <string name="service_icon_content_description">Service Icon</string>
+    <string name="title_activity_vehicle_detail">VehicleDetailActivity</string>
+    <string name="vehicle_detail_title">Vehicle View</string>
+    <string name="vehicle_create_edit_title">Vehicle Create/Edit</string>
+    <string name="fuel_entries_title">Fuel Entries</string>
+    <string name="fuel_entry_create_edit_title">Fuel Entry Create/Edit</string>
+    <string name="service_entries_title">Service Entries</string>
+    <string name="service_entry_create_edit_title">Service Entry Create/Edit</string>
+    <string name="action_settings">Settings</string>
+    <string name="service_performed">Service Performed</string>
+    <string name="oil">oil</string>
+    <string name="oil_filter">oil filter</string>
+    <string name="air_filter">air filter</string>
+    <string name="cabin_air_filter">cabin air filter</string>
+    <string name="rotated_tires">rotated tires</string>
+    <string name="service_note_label">other service and/or note:</string>
+    <string name="service_note_hint">Enter a note or additional service performed here.</string>
+    <string name="vehicle_note_label">enter vehicle note here:</string>
+    <string name="vehicle_note_hint">Enter any additional information that you want handy for this
+        vehicle such as oil/air filter brands/part numbers, preferred tire pressures, etc.</string>
+    <string name="add_vehicle_note">add a note</string>
+    <string name="vehicle_note">vehicle note</string>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/veh_image_content_description"
+        android:src="@drawable/vi_car"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/year_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:text="@string/year"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="72dp" />
+    <Button
+        android:id="@+id/year_display"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/year_label"
+        android:text=""
+        android:layout_below="@+id/imageView2" />
+
+
+    <TextView
+        android:id="@+id/make_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/year_display"
+        android:layout_marginTop="8dip"
+        android:text="@string/make"
+        android:layout_alignRight="@+id/year_label" />
+    <EditText
+        android:id="@+id/make"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/year_display"
+        android:layout_toRightOf="@+id/make_label"
+        android:hint="@string/make_hint"
+        android:singleLine="true"
+        android:inputType="textCapWords" />
+
+
+    <TextView
+        android:id="@+id/model_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/make"
+        android:layout_marginTop="8dip"
+        android:text="@string/model"
+        android:layout_alignRight="@+id/year_label" />
+    <EditText
+        android:id="@+id/model"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/make"
+        android:layout_toRightOf="@id/model_label"
+        android:hint="@string/model_hint"
+        android:singleLine="true"
+        android:inputType="textCapWords" />
+
+
+    <TextView
+        android:id="@+id/vin_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/model"
+        android:layout_marginTop="8dip"
+        android:text="@string/vin"
+        android:layout_alignRight="@+id/year_label" />
+    <EditText
+        android:id="@+id/vin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/model"
+        android:layout_toRightOf="@id/vin_label"
+        android:hint="@string/vin_hint"
+        android:inputType="textCapCharacters"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/plate_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vin"
+        android:layout_marginTop="8dip"
+        android:text="@string/plate"
+        android:layout_alignRight="@+id/year_label" />
+    <EditText
+        android:id="@+id/plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vin"
+        android:layout_toRightOf="@id/plate_label"
+        android:hint="@string/plate_hint"
+        android:inputType="textCapCharacters"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/ren_date_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plate"
+        android:layout_marginTop="8dip"
+        android:text="@string/ren_date"
+        android:layout_alignRight="@+id/year_label" />
+    <Button
+        android:id="@+id/ren_date_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plate"
+        android:layout_marginTop="4dip"
+        android:layout_toRightOf="@id/ren_date_label"
+        android:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/vehicle_note_label"
+        android:id="@+id/vehicleNoteLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ren_date_display"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textCapSentences|textAutoComplete|textAutoCorrect"
+        android:ems="10"
+        android:id="@+id/vehicleNote"
+        android:editable="false"
+        android:hint="@string/vehicle_note_hint"
+        android:nestedScrollingEnabled="true"
+        android:maxLength="128"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vehicleNoteLabel"
+        android:maxHeight="80dp" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vehicleNote" />
+
+</RelativeLayout>

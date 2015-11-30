@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diversedistractions.vehiclelog">
+
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher" android:theme="@style/AppTheme">
+        <activity
+            android:name=".VehiclesListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+        <activity
+            android:name=".VehicleCreateEditActivity"
+            android:label="@string/add_edit_vehicle_title" >
+            </activity>
+        <activity
+            android:name=".VehicleDetailActivity"
+            android:label="@string/title_activity_vehicle_detail"
+            android:parentActivityName=".VehiclesListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VehiclesListActivity" />
+        </activity>
+        <activity
+            android:name=".FuelEntriesListActivity"
+            android:label="FuelEntriesListActivity"
+            android:parentActivityName=".VehicleDetailActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VehicleDetailActivity" />
+            </activity>
+        <activity
+            android:name=".FuelEntryCreateEditActivity"
+            android:label="@string/add_edit_entry_title" >
+            </activity>
+        <activity
+            android:name=".ServiceEntriesListActivity"
+            android:label="ServiceEntriesListActivity">
+            </activity>
+        <activity
+            android:name=".ServiceEntryCreateEditActivity"
+            android:label="ServiceEntryCreateEditActivity">
+            </activity>
+        <activity
+            android:name=".DbBackupActivity" >
+            </activity>
+        <activity
+            android:name=".DbRestoreActivity" >
+            </activity>
+    </application>
+
+</manifest>

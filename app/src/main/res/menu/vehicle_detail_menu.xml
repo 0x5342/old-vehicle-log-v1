@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.diversedistractions.vehiclelog.com.diversedistractions.vehiclelog.VehicleDetailActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item
+        android:id="@+id/edit_vehicle"
+        android:icon="@drawable/ic_alien_glow_edit"
+        android:title="@string/menu_edit_vehicle"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete_vehicle"
+        android:icon="@drawable/ic_alien_glow_discard"
+        android:title="@string/menu_delete_vehicle"
+        android:showAsAction="never" />
+
+</menu>
